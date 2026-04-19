@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://boh0jcfcvpcl4"]
+[gd_scene format=3 uid="uid://csegusltekrfh"]
 
-[node name="TestLevel" type="Node3D" unique_id=624541710]
+[ext_resource type="PackedScene" uid="uid://dru2rjlq6uhie" path="res://scenes/objects/player.tscn" id="1_jbqir"]
+
+[node name="TestLevel" type="Node2D" unique_id=1893495644]
+
+[node name="Player" parent="." unique_id=427862521 instance=ExtResource("1_jbqir")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=171111894]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=797274616]
+z_index = -1
+offset_left = -1280.0
+offset_top = -720.0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.012617188, 0.012617188, 0.012617188, 1)
