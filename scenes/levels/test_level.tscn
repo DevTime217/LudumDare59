@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://csegusltekrfh"]
 
 [ext_resource type="PackedScene" uid="uid://dru2rjlq6uhie" path="res://scenes/objects/player.tscn" id="1_jbqir"]
+[ext_resource type="PackedScene" uid="uid://c52jylytsn7pq" path="res://scenes/objects/wall.tscn" id="2_yautc"]
+[ext_resource type="PackedScene" uid="uid://7rqqpjacl6sn" path="res://scenes/objects/button.tscn" id="3_fr1um"]
+[ext_resource type="PackedScene" uid="uid://drddrsynhy8bl" path="res://scenes/objects/door.tscn" id="4_v45ci"]
+[ext_resource type="PackedScene" uid="uid://vhy82t86vim3" path="res://scenes/objects/exit.tscn" id="5_48ne7"]
 
 [node name="TestLevel" type="Node2D" unique_id=1893495644]
 
@@ -14,4 +18,154 @@ offset_left = -1280.0
 offset_top = -720.0
 offset_right = 1280.0
 offset_bottom = 720.0
-color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+color = Color(0.011764706, 0.011764706, 0.011764706, 0.5176471)
+
+[node name="Top Walls" type="Node2D" parent="." unique_id=691239250]
+position = Vector2(0, -512)
+
+[node name="Wall" parent="Top Walls" unique_id=877079492 instance=ExtResource("2_yautc")]
+
+[node name="Wall2" parent="Top Walls" unique_id=1248965088 instance=ExtResource("2_yautc")]
+position = Vector2(128, 0)
+
+[node name="Wall3" parent="Top Walls" unique_id=1173958896 instance=ExtResource("2_yautc")]
+position = Vector2(256, 0)
+
+[node name="Wall6" parent="Top Walls" unique_id=1962893893 instance=ExtResource("2_yautc")]
+position = Vector2(384, 0)
+
+[node name="Wall7" parent="Top Walls" unique_id=1503993657 instance=ExtResource("2_yautc")]
+position = Vector2(512, 0)
+
+[node name="Wall4" parent="Top Walls" unique_id=582076256 instance=ExtResource("2_yautc")]
+position = Vector2(-128, 0)
+
+[node name="Wall5" parent="Top Walls" unique_id=59811784 instance=ExtResource("2_yautc")]
+position = Vector2(-256, 0)
+
+[node name="Wall8" parent="Top Walls" unique_id=606960554 instance=ExtResource("2_yautc")]
+position = Vector2(-384, 0)
+
+[node name="Wall9" parent="Top Walls" unique_id=1390165018 instance=ExtResource("2_yautc")]
+position = Vector2(-512, 0)
+
+[node name="Bottom Walls" type="Node2D" parent="." unique_id=996404754]
+position = Vector2(0, 512)
+
+[node name="Wall" parent="Bottom Walls" unique_id=1623159829 instance=ExtResource("2_yautc")]
+
+[node name="Wall2" parent="Bottom Walls" unique_id=1641673708 instance=ExtResource("2_yautc")]
+position = Vector2(128, 0)
+
+[node name="Wall3" parent="Bottom Walls" unique_id=1950777271 instance=ExtResource("2_yautc")]
+position = Vector2(256, 0)
+
+[node name="Wall6" parent="Bottom Walls" unique_id=29492386 instance=ExtResource("2_yautc")]
+position = Vector2(384, 0)
+
+[node name="Wall7" parent="Bottom Walls" unique_id=1635833797 instance=ExtResource("2_yautc")]
+position = Vector2(512, 0)
+
+[node name="Wall4" parent="Bottom Walls" unique_id=45859256 instance=ExtResource("2_yautc")]
+position = Vector2(-128, 0)
+
+[node name="Wall5" parent="Bottom Walls" unique_id=1145076389 instance=ExtResource("2_yautc")]
+position = Vector2(-256, 0)
+
+[node name="Wall8" parent="Bottom Walls" unique_id=108532837 instance=ExtResource("2_yautc")]
+position = Vector2(-384, 0)
+
+[node name="Wall9" parent="Bottom Walls" unique_id=1936019381 instance=ExtResource("2_yautc")]
+position = Vector2(-512, 0)
+
+[node name="Left Walls" type="Node2D" parent="." unique_id=1650526724]
+position = Vector2(-640, 0)
+
+[node name="Wall" parent="Left Walls" unique_id=496703321 instance=ExtResource("2_yautc")]
+
+[node name="Wall2" parent="Left Walls" unique_id=428384012 instance=ExtResource("2_yautc")]
+position = Vector2(0, 128)
+
+[node name="Wall3" parent="Left Walls" unique_id=818222560 instance=ExtResource("2_yautc")]
+position = Vector2(0, 256)
+
+[node name="Wall9" parent="Left Walls" unique_id=452189207 instance=ExtResource("2_yautc")]
+position = Vector2(0, 384)
+
+[node name="Wall10" parent="Left Walls" unique_id=740066562 instance=ExtResource("2_yautc")]
+position = Vector2(0, 512)
+
+[node name="Wall4" parent="Left Walls" unique_id=1735906267 instance=ExtResource("2_yautc")]
+position = Vector2(0, -128)
+
+[node name="Wall5" parent="Left Walls" unique_id=1587052610 instance=ExtResource("2_yautc")]
+position = Vector2(0, -128)
+
+[node name="Wall6" parent="Left Walls" unique_id=1865584394 instance=ExtResource("2_yautc")]
+position = Vector2(0, -256)
+
+[node name="Wall7" parent="Left Walls" unique_id=1802003084 instance=ExtResource("2_yautc")]
+position = Vector2(0, -384)
+
+[node name="Wall8" parent="Left Walls" unique_id=865660791 instance=ExtResource("2_yautc")]
+position = Vector2(0, -512)
+
+[node name="Right Walls" type="Node2D" parent="." unique_id=693556710]
+position = Vector2(640, 0)
+
+[node name="Wall" parent="Right Walls" unique_id=883946608 instance=ExtResource("2_yautc")]
+
+[node name="Wall2" parent="Right Walls" unique_id=1958511654 instance=ExtResource("2_yautc")]
+position = Vector2(0, 128)
+
+[node name="Wall3" parent="Right Walls" unique_id=1138494957 instance=ExtResource("2_yautc")]
+position = Vector2(0, 256)
+
+[node name="Wall9" parent="Right Walls" unique_id=1303929878 instance=ExtResource("2_yautc")]
+position = Vector2(0, 384)
+
+[node name="Wall10" parent="Right Walls" unique_id=2059045716 instance=ExtResource("2_yautc")]
+position = Vector2(0, 512)
+
+[node name="Wall4" parent="Right Walls" unique_id=1393843914 instance=ExtResource("2_yautc")]
+position = Vector2(0, -128)
+
+[node name="Wall5" parent="Right Walls" unique_id=1393127905 instance=ExtResource("2_yautc")]
+position = Vector2(0, -128)
+
+[node name="Wall6" parent="Right Walls" unique_id=192405760 instance=ExtResource("2_yautc")]
+position = Vector2(0, -256)
+
+[node name="Wall7" parent="Right Walls" unique_id=1832921093 instance=ExtResource("2_yautc")]
+position = Vector2(0, -384)
+
+[node name="Wall8" parent="Right Walls" unique_id=353347303 instance=ExtResource("2_yautc")]
+position = Vector2(0, -512)
+
+[node name="Button" parent="." unique_id=621375552 instance=ExtResource("3_fr1um")]
+z_index = -1
+position = Vector2(-384, 256)
+
+[node name="Wall" parent="." unique_id=1536799770 instance=ExtResource("2_yautc")]
+position = Vector2(-256, -384)
+
+[node name="Wall2" parent="." unique_id=108159499 instance=ExtResource("2_yautc")]
+position = Vector2(-256, -256)
+
+[node name="Wall3" parent="." unique_id=1601265884 instance=ExtResource("2_yautc")]
+position = Vector2(256, -384)
+
+[node name="Wall4" parent="." unique_id=650530304 instance=ExtResource("2_yautc")]
+position = Vector2(256, -256)
+
+[node name="Door" parent="." unique_id=2028217097 instance=ExtResource("4_v45ci")]
+position = Vector2(-128, -256)
+
+[node name="Door2" parent="." unique_id=179357255 instance=ExtResource("4_v45ci")]
+position = Vector2(0, -256)
+
+[node name="Door3" parent="." unique_id=1345465650 instance=ExtResource("4_v45ci")]
+position = Vector2(128, -256)
+
+[node name="Exit" parent="." unique_id=1578034548 instance=ExtResource("5_48ne7")]
+position = Vector2(0, -384)
