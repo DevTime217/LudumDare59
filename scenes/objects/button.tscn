@@ -1,12 +1,10 @@
 [gd_scene format=3 uid="uid://7rqqpjacl6sn"]
 
-[ext_resource type="Script" uid="uid://b18s3f7offkpy" path="res://scenes/objects/button.gd" id="1_2wxwk"]
 [ext_resource type="Texture2D" uid="uid://b76v4ja7pjubi" path="res://textures/Button.png" id="1_ufqlp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u77kr"]
 
 [node name="Button" type="StaticBody2D" unique_id=621375552 groups=["Button"]]
-script = ExtResource("1_2wxwk")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=225221681]
 texture = ExtResource("1_ufqlp")

@@ -1,12 +1,10 @@
 [gd_scene format=3 uid="uid://vhy82t86vim3"]
 
 [ext_resource type="Texture2D" uid="uid://brvku8b6rtglf" path="res://textures/Exit.png" id="1_ilbk5"]
-[ext_resource type="Script" uid="uid://bmnu6vhu24vav" path="res://scenes/objects/exit.gd" id="1_pm745"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lh451"]
 
 [node name="Exit" type="StaticBody2D" unique_id=1578034548 groups=["Exit"]]
-script = ExtResource("1_pm745")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=43490315]
 texture = ExtResource("1_ilbk5")

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Ludum Dare 59"
-run/main_scene="uid://csegusltekrfh"
+run/main_scene="uid://bscvlvur1yqiq"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -24,6 +24,7 @@ buses/default_bus_layout="uid://bric1oplh5tft"
 window/size/viewport_width=2560
 window/size/viewport_height=1440
 window/size/mode=3
+window/size/borderless=true
 window/stretch/mode="canvas_items"
 
 [input]

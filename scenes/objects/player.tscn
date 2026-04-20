@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dru2rjlq6uhie"]
 
 [ext_resource type="Script" uid="uid://c6rf73d84b8rn" path="res://scenes/objects/player.gd" id="1_2147m"]
-[ext_resource type="Texture2D" uid="uid://diy6lxlnbux18" path="res://icon.svg" id="1_a8lix"]
+[ext_resource type="Texture2D" uid="uid://cywvrgwor7l5e" path="res://textures/Player.png" id="2_2147m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2147m"]
 
@@ -10,7 +10,7 @@ script = ExtResource("1_2147m")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=893138802]
 texture_filter = 1
-texture = ExtResource("1_a8lix")
+texture = ExtResource("2_2147m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=292639480]
 scale = Vector2(6, 6)
